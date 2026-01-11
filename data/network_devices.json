@@ -1,0 +1,486 @@
+{
+  "company": "TechCorp AB",
+  "last_updated": "2024-09-30T10:30:00",
+  "locations": [
+    {
+      "site": "Huvudkontor",
+      "city": "Stockholm",
+      "contact": "Anna Andersson",
+      "devices": [
+        {
+          "hostname": "SW-CORE-01",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Catalyst 9300",
+          "ip_address": "192.168.1.1",
+          "status": "online",
+          "uptime_days": 145,
+          "ports": { "total": 48, "used": 42, "free": 6 },
+          "vlans": [10, 20, 30, 40, 50]
+        },
+        {
+          "hostname": "SW-CORE-02",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Catalyst 9300",
+          "ip_address": "192.168.1.2",
+          "status": "online",
+          "uptime_days": 145,
+          "ports": { "total": 48, "used": 38, "free": 10 },
+          "vlans": [10, 20, 30, 40, 50]
+        },
+        {
+          "hostname": "SW-DIST-01",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Catalyst 2960",
+          "ip_address": "192.168.1.3",
+          "status": "online",
+          "uptime_days": 89,
+          "ports": { "total": 24, "used": 18, "free": 6 },
+          "vlans": [10, 20]
+        },
+        {
+          "hostname": "SW-DIST-02",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Catalyst 2960",
+          "ip_address": "192.168.1.4",
+          "status": "online",
+          "uptime_days": 89,
+          "ports": { "total": 24, "used": 22, "free": 2 },
+          "vlans": [30, 40]
+        },
+        {
+          "hostname": "SW-ACCESS-03",
+          "type": "switch",
+          "vendor": "HP",
+          "model": "Aruba 2530",
+          "ip_address": "192.168.1.5",
+          "status": "offline",
+          "uptime_days": 0,
+          "ports": { "total": 24, "used": 0, "free": 24 },
+          "vlans": [10, 20, 30]
+        },
+        {
+          "hostname": "SW-ACCESS-04",
+          "type": "switch",
+          "vendor": "HP",
+          "model": "Aruba 2530",
+          "ip_address": "192.168.1.6",
+          "status": "online",
+          "uptime_days": 234,
+          "ports": { "total": 24, "used": 19, "free": 5 },
+          "vlans": [10, 20]
+        },
+        {
+          "hostname": "SW-ACCESS-05",
+          "type": "switch",
+          "vendor": "HP",
+          "model": "Aruba 2530",
+          "ip_address": "192.168.1.7",
+          "status": "online",
+          "uptime_days": 15,
+          "ports": { "total": 24, "used": 23, "free": 1 },
+          "vlans": [30, 40]
+        },
+        {
+          "hostname": "RT-EDGE-01",
+          "type": "router",
+          "vendor": "Fortinet",
+          "model": "FortiGate 100F",
+          "ip_address": "192.168.1.254",
+          "status": "online",
+          "uptime_days": 234,
+          "interfaces": [
+            { "name": "wan1", "status": "up", "bandwidth_mbps": 1000 },
+            { "name": "wan2", "status": "up", "bandwidth_mbps": 500 },
+            { "name": "dmz", "status": "up", "bandwidth_mbps": 1000 }
+          ]
+        },
+        {
+          "hostname": "RT-EDGE-02",
+          "type": "router",
+          "vendor": "Fortinet",
+          "model": "FortiGate 100F",
+          "ip_address": "192.168.1.253",
+          "status": "online",
+          "uptime_days": 234,
+          "interfaces": [
+            { "name": "wan1", "status": "up", "bandwidth_mbps": 1000 },
+            { "name": "wan2", "status": "down", "bandwidth_mbps": 500 }
+          ]
+        },
+        {
+          "hostname": "AP-FLOOR1-01",
+          "type": "access_point",
+          "vendor": "Ubiquiti",
+          "model": "UniFi AC Pro",
+          "ip_address": "192.168.10.101",
+          "status": "online",
+          "uptime_days": 67,
+          "connected_clients": 18
+        },
+        {
+          "hostname": "AP-FLOOR1-02",
+          "type": "access_point",
+          "vendor": "Ubiquiti",
+          "model": "UniFi AC Pro",
+          "ip_address": "192.168.10.102",
+          "status": "online",
+          "uptime_days": 67,
+          "connected_clients": 25
+        },
+        {
+          "hostname": "AP-FLOOR2-01",
+          "type": "access_point",
+          "vendor": "Ubiquiti",
+          "model": "UniFi AC Pro",
+          "ip_address": "192.168.20.101",
+          "status": "online",
+          "uptime_days": 12,
+          "connected_clients": 23
+        },
+        {
+          "hostname": "AP-FLOOR2-02",
+          "type": "access_point",
+          "vendor": "Ubiquiti",
+          "model": "UniFi AC Pro",
+          "ip_address": "192.168.20.102",
+          "status": "warning",
+          "uptime_days": 2,
+          "connected_clients": 45
+        },
+        {
+          "hostname": "AP-FLOOR3-01",
+          "type": "access_point",
+          "vendor": "Cisco",
+          "model": "Aironet 2802",
+          "ip_address": "192.168.30.101",
+          "status": "online",
+          "uptime_days": 156,
+          "connected_clients": 31
+        },
+        {
+          "hostname": "FW-DMZ-01",
+          "type": "firewall",
+          "vendor": "Palo Alto",
+          "model": "PA-440",
+          "ip_address": "192.168.100.1",
+          "status": "online",
+          "uptime_days": 89,
+          "throughput_mbps": 856,
+          "active_sessions": 4523
+        }
+      ]
+    },
+    {
+      "site": "Lager",
+      "city": "Göteborg",
+      "contact": "Björn Björnsson",
+      "devices": [
+        {
+          "hostname": "SW-LAGER-01",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Catalyst 2960",
+          "ip_address": "192.168.2.1",
+          "status": "online",
+          "uptime_days": 456,
+          "ports": { "total": 48, "used": 12, "free": 36 },
+          "vlans": [100, 200]
+        },
+        {
+          "hostname": "SW-LAGER-02",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Catalyst 2960",
+          "ip_address": "192.168.2.2",
+          "status": "online",
+          "uptime_days": 23,
+          "ports": { "total": 48, "used": 45, "free": 3 },
+          "vlans": [100, 200, 300]
+        },
+        {
+          "hostname": "RT-LAGER-01",
+          "type": "router",
+          "vendor": "Cisco",
+          "model": "ISR 4331",
+          "ip_address": "192.168.2.254",
+          "status": "warning",
+          "uptime_days": 2,
+          "interfaces": [
+            { "name": "gi0/0", "status": "up", "bandwidth_mbps": 100 },
+            { "name": "gi0/1", "status": "down", "bandwidth_mbps": 100 }
+          ]
+        },
+        {
+          "hostname": "AP-LAGER-01",
+          "type": "access_point",
+          "vendor": "Ubiquiti",
+          "model": "UniFi AC Lite",
+          "ip_address": "192.168.200.101",
+          "status": "online",
+          "uptime_days": 67,
+          "connected_clients": 8
+        },
+        {
+          "hostname": "AP-LAGER-02",
+          "type": "access_point",
+          "vendor": "Ubiquiti",
+          "model": "UniFi AC Lite",
+          "ip_address": "192.168.200.102",
+          "status": "offline",
+          "uptime_days": 0,
+          "connected_clients": 0
+        }
+      ]
+    },
+    {
+      "site": "Kontor Malmö",
+      "city": "Malmö",
+      "contact": "Cecilia Carlsson",
+      "devices": [
+        {
+          "hostname": "SW-MAL-CORE-01",
+          "type": "switch",
+          "vendor": "Juniper",
+          "model": "EX4300",
+          "ip_address": "192.168.3.1",
+          "status": "online",
+          "uptime_days": 367,
+          "ports": { "total": 48, "used": 35, "free": 13 },
+          "vlans": [10, 20, 30, 110, 120]
+        },
+        {
+          "hostname": "SW-MAL-ACC-01",
+          "type": "switch",
+          "vendor": "Juniper",
+          "model": "EX2300",
+          "ip_address": "192.168.3.2",
+          "status": "online",
+          "uptime_days": 45,
+          "ports": { "total": 24, "used": 20, "free": 4 },
+          "vlans": [10, 20]
+        },
+        {
+          "hostname": "SW-MAL-ACC-02",
+          "type": "switch",
+          "vendor": "Juniper",
+          "model": "EX2300",
+          "ip_address": "192.168.3.3",
+          "status": "online",
+          "uptime_days": 8,
+          "ports": { "total": 24, "used": 24, "free": 0 },
+          "vlans": [110, 120]
+        },
+        {
+          "hostname": "RT-MAL-01",
+          "type": "router",
+          "vendor": "Mikrotik",
+          "model": "CCR1009",
+          "ip_address": "192.168.3.254",
+          "status": "online",
+          "uptime_days": 178,
+          "interfaces": [
+            { "name": "ether1", "status": "up", "bandwidth_mbps": 500 },
+            { "name": "ether2", "status": "up", "bandwidth_mbps": 500 }
+          ]
+        },
+        {
+          "hostname": "AP-MAL-01",
+          "type": "access_point",
+          "vendor": "Aruba",
+          "model": "AP-515",
+          "ip_address": "192.168.3.101",
+          "status": "online",
+          "uptime_days": 90,
+          "connected_clients": 28
+        },
+        {
+          "hostname": "AP-MAL-02",
+          "type": "access_point",
+          "vendor": "Aruba",
+          "model": "AP-515",
+          "ip_address": "192.168.3.102",
+          "status": "online",
+          "uptime_days": 90,
+          "connected_clients": 19
+        },
+        {
+          "hostname": "FW-MAL-01",
+          "type": "firewall",
+          "vendor": "Fortinet",
+          "model": "FortiGate 60F",
+          "ip_address": "192.168.3.200",
+          "status": "online",
+          "uptime_days": 234,
+          "throughput_mbps": 234,
+          "active_sessions": 1876
+        }
+      ]
+    },
+    {
+      "site": "Datacenter",
+      "city": "Stockholm",
+      "contact": "David Davidsson",
+      "devices": [
+        {
+          "hostname": "SW-DC-CORE-01",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Nexus 9396",
+          "ip_address": "10.0.0.1",
+          "status": "online",
+          "uptime_days": 789,
+          "ports": { "total": 48, "used": 46, "free": 2 },
+          "vlans": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+        },
+        {
+          "hostname": "SW-DC-CORE-02",
+          "type": "switch",
+          "vendor": "Cisco",
+          "model": "Nexus 9396",
+          "ip_address": "10.0.0.2",
+          "status": "online",
+          "uptime_days": 789,
+          "ports": { "total": 48, "used": 46, "free": 2 },
+          "vlans": [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+        },
+        {
+          "hostname": "SW-DC-TOR-01",
+          "type": "switch",
+          "vendor": "Arista",
+          "model": "7050SX",
+          "ip_address": "10.0.1.1",
+          "status": "online",
+          "uptime_days": 234,
+          "ports": { "total": 48, "used": 48, "free": 0 },
+          "vlans": [100, 200, 300]
+        },
+        {
+          "hostname": "SW-DC-TOR-02",
+          "type": "switch",
+          "vendor": "Arista",
+          "model": "7050SX",
+          "ip_address": "10.0.1.2",
+          "status": "warning",
+          "uptime_days": 5,
+          "ports": { "total": 48, "used": 47, "free": 1 },
+          "vlans": [400, 500, 600]
+        },
+        {
+          "hostname": "SW-DC-TOR-03",
+          "type": "switch",
+          "vendor": "Arista",
+          "model": "7050SX",
+          "ip_address": "10.0.1.3",
+          "status": "online",
+          "uptime_days": 156,
+          "ports": { "total": 48, "used": 44, "free": 4 },
+          "vlans": [700, 800, 900]
+        },
+        {
+          "hostname": "RT-DC-EDGE-01",
+          "type": "router",
+          "vendor": "Juniper",
+          "model": "MX204",
+          "ip_address": "10.0.0.254",
+          "status": "online",
+          "uptime_days": 567,
+          "interfaces": [
+            { "name": "xe-0/0/0", "status": "up", "bandwidth_mbps": 10000 },
+            { "name": "xe-0/0/1", "status": "up", "bandwidth_mbps": 10000 },
+            { "name": "xe-0/0/2", "status": "up", "bandwidth_mbps": 10000 }
+          ]
+        },
+        {
+          "hostname": "FW-DC-01",
+          "type": "firewall",
+          "vendor": "Checkpoint",
+          "model": "6500",
+          "ip_address": "10.0.0.100",
+          "status": "online",
+          "uptime_days": 445,
+          "throughput_mbps": 8934,
+          "active_sessions": 125678
+        },
+        {
+          "hostname": "FW-DC-02",
+          "type": "firewall",
+          "vendor": "Checkpoint",
+          "model": "6500",
+          "ip_address": "10.0.0.101",
+          "status": "online",
+          "uptime_days": 445,
+          "throughput_mbps": 7823,
+          "active_sessions": 98234
+        },
+        {
+          "hostname": "LB-DC-01",
+          "type": "load_balancer",
+          "vendor": "F5",
+          "model": "BIG-IP i5800",
+          "ip_address": "10.0.0.50",
+          "status": "online",
+          "uptime_days": 234,
+          "active_connections": 45678,
+          "throughput_mbps": 4567
+        },
+        {
+          "hostname": "LB-DC-02",
+          "type": "load_balancer",
+          "vendor": "F5",
+          "model": "BIG-IP i5800",
+          "ip_address": "10.0.0.51",
+          "status": "online",
+          "uptime_days": 234,
+          "active_connections": 43210,
+          "throughput_mbps": 4321
+        }
+      ]
+    },
+    {
+      "site": "Säkerhetskopia",
+      "city": "Umeå",
+      "contact": "Erik Eriksson",
+      "devices": [
+        {
+          "hostname": "SW-DR-01",
+          "type": "switch",
+          "vendor": "Dell",
+          "model": "S4128F",
+          "ip_address": "10.1.0.1",
+          "status": "online",
+          "uptime_days": 890,
+          "ports": { "total": 28, "used": 12, "free": 16 },
+          "vlans": [2000, 2100]
+        },
+        {
+          "hostname": "RT-DR-01",
+          "type": "router",
+          "vendor": "Cisco",
+          "model": "ASR 1001",
+          "ip_address": "10.1.0.254",
+          "status": "online",
+          "uptime_days": 890,
+          "interfaces": [
+            { "name": "gi0/0/0", "status": "up", "bandwidth_mbps": 1000 },
+            { "name": "gi0/0/1", "status": "standby", "bandwidth_mbps": 1000 }
+          ]
+        },
+        {
+          "hostname": "FW-DR-01",
+          "type": "firewall",
+          "vendor": "Sophos",
+          "model": "XG 450",
+          "ip_address": "10.1.0.100",
+          "status": "online",
+          "uptime_days": 345,
+          "throughput_mbps": 234,
+          "active_sessions": 567
+        }
+      ]
+    }
+  ]
+}

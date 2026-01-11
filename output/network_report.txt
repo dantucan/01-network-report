@@ -1,0 +1,91 @@
+================================================================================
+                         NÄTVERKSRAPPORT - TechCorp AB                          
+================================================================================
+Rapportdatum: 2026-01-11 13:26
+Datauppdatering: 2024-09-30T10:30:00
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+KRITISKT: 2 enheter offline
+VARNING:  3 enheter med warning-status
+OBS:     9 enheter med låg uptime (<30 dagar)
+OBS:     11 switchar över 80% portanvändning
+
+ENHETER MED STATUS: OFFLINE
+--------------------------------------------------------------------------------
+Hostname          IP               Typ            Site                Uptime    
+----------------  ---------------  -------------  ------------------  ----------
+SW-ACCESS-03      192.168.1.5      switch         Huvudkontor         0 d       
+AP-LAGER-02       192.168.200.102  access_point   Lager               0 d       
+
+ENHETER MED STATUS: WARNING
+--------------------------------------------------------------------------------
+Hostname          IP               Typ            Site                Uptime    
+----------------  ---------------  -------------  ------------------  ----------
+AP-FLOOR2-02      192.168.20.102   access_point   Huvudkontor         2 d       
+RT-LAGER-01       192.168.2.254    router         Lager               2 d       
+SW-DC-TOR-02      10.0.1.2         switch         Datacenter          5 d       
+
+ENHETER MED LÅG UPTIME (<30 dagar)
+--------------------------------------------------------------------------------
+SW-ACCESS-03        0 dagar  offline  Huvudkontor
+AP-LAGER-02         0 dagar  offline  Lager
+AP-FLOOR2-02        2 dagar  warning  Huvudkontor
+RT-LAGER-01         2 dagar  warning  Lager
+SW-DC-TOR-02        5 dagar  warning  Datacenter
+SW-MAL-ACC-02       8 dagar   online  Kontor Malmö
+AP-FLOOR2-01       12 dagar   online  Huvudkontor
+SW-ACCESS-05       15 dagar   online  Huvudkontor
+SW-LAGER-02        23 dagar   online  Lager
+
+STATISTIK PER ENHETSTYP
+--------------------------------------------------------------------------------
+access_point   :   9 st
+firewall       :   5 st
+load_balancer  :   2 st
+router         :   6 st
+switch         :  18 st
+----------------------------------------
+TOTALT         :  40 enheter
+
+PORTANVÄNDNING – SWITCHAR
+--------------------------------------------------------------------------------
+Totalt: 541/676 portar används (80.0%)
+
+Per site:
+  Datacenter          switchar:  5  231/240   96.2%
+  Huvudkontor         switchar:  7  162/216   75.0%
+  Kontor Malmö        switchar:  3   79/96    82.3%
+  Lager               switchar:  2   57/96    59.4%
+  Säkerhetskopia      switchar:  1   12/28    42.9%
+
+SWITCHAR ÖVER 80% PORTANVÄNDNING
+--------------------------------------------------------------------------------
+SW-MAL-ACC-02    24/24  100.0%  Kontor Malmö
+SW-DC-TOR-01     48/48  100.0%  Datacenter
+SW-DC-TOR-02     47/48   97.9%  Datacenter
+SW-ACCESS-05     23/24   95.8%  Huvudkontor
+SW-DC-CORE-01    46/48   95.8%  Datacenter
+SW-DC-CORE-02    46/48   95.8%  Datacenter
+SW-LAGER-02      45/48   93.8%  Lager
+SW-DIST-02       22/24   91.7%  Huvudkontor
+SW-DC-TOR-03     44/48   91.7%  Datacenter
+SW-CORE-01       42/48   87.5%  Huvudkontor
+SW-MAL-ACC-01    20/24   83.3%  Kontor Malmö
+
+VLAN-ÖVERSIKT
+--------------------------------------------------------------------------------
+Totalt antal unika VLAN: 19
+VLANs: 10, 20, 30, 40, 50, 100, 110, 120, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 2000, 2100
+
+STATISTIK PER SITE
+--------------------------------------------------------------------------------
+Datacenter: 10 (online: 9, offline: 0, warning: 1)
+Huvudkontor: 15 (online: 13, offline: 1, warning: 1)
+Kontor Malmö: 7 (online: 7, offline: 0, warning: 0)
+Lager: 5 (online: 3, offline: 1, warning: 1)
+Säkerhetskopia: 3 (online: 3, offline: 0, warning: 0)
+
+================================================================================
+RAPPORT SLUT
+================================================================================
